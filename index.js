@@ -4,6 +4,9 @@ const flags = ["🇦🇷", "🇧🇷", "🇨🇱", "🇿🇲", "🇺🇬", "🇲
 
 const country = document.querySelector(".country");
 const flag = document.querySelector(".flag")
+const button = document.querySelector(".btn")
+const input = document.querySelector(".inputCountry")
+const emoji = document.querySelector(".inputFlag")
 
 function createList(list) {
     const node = document.createElement("li");
@@ -13,12 +16,19 @@ function createList(list) {
     const country = document.querySelector(".country").appendChild(node);
 
 }
-function createFlangs(lists) {
+function createFlags(lists) {
     const node2 = document.createElement("li");
     const textnode2 = document.createTextNode(lists);
 
     node2.appendChild(textnode2);
     const flag = document.querySelector(".flag").appendChild(node2);
+}
+
+function displayCountry(){
+    var countryInput = input.value
+    var flagInput = emoji.value
+    console.log(countryInput)
+    createList(countryInput + ' ' + flagInput)
 }
 
 
@@ -31,4 +41,6 @@ function showCountry(countries) {
     }
 
 
+button.addEventListener('click', displayCountry)
 showCountry(countries);
+
