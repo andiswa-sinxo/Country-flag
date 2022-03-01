@@ -7,7 +7,7 @@ const flag = document.querySelector(".flag")
 const button = document.querySelector(".btn")
 const input = document.querySelector(".inputCountry")
 const emoji = document.querySelector(".inputFlag")
-
+const error = document.querySelector(".errorMsg")
 var countryFlags = [];
 
 if (localStorage["country"]) {
@@ -34,6 +34,10 @@ function createFlags(lists) {
 function displayCountry() {
     var countryInput = input.value
     var flagInput = emoji.value
+
+    // f(countryInput === ""){
+    //     error.innerHTML = "Please enter a country"
+    // }i
     console.log(countryInput)
     createList(countryInput + ' ' + flagInput)
     
