@@ -13,6 +13,17 @@ li{
     font-size: 25px;
     
 }
+
+.inputFlag{
+    background-color: olivedrab;
+    padding: 9px 40px;
+}
+
+.inputCountry{
+    background-color: olivedrab;
+    padding: 9px 40px;
+    /* margin: 30px; */
+}
 p{
     text-align: center;
     font-size: 30px;
@@ -20,4 +31,15 @@ p{
 } 
 .container{
     border-style: outset;
+}
+
+label{
+    font-size: 25px;
+}
+.btn{
+    height: 40px;
+    width: 9%;
+    background-color: olivedrab;
+    margin: 20px;
+    
 }
