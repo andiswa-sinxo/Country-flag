@@ -10,7 +10,7 @@ const emoji = document.querySelector(".inputFlag")
 const ascending = document.querySelector(".asceBtn")
 const descending = document.querySelector(".descBtn")
 const error = document.querySelector(".errorMsg")
-var countryFlags = [];
+const countryFlags = [];
 
 if (localStorage["country"]) {
     countryFlags = JSON.parse(localStorage.getItem("country"));
@@ -59,8 +59,7 @@ function displayCountry() {
         setTimeout(() => {
             error.innerHTML = '';
         }, 2000);
-        return
-
+        
     }
     if (regex.test(emoji.value)) {
     createList(countryInput + ' ' + flagInput)
