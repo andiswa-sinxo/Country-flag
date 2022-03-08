@@ -10,13 +10,13 @@ const emoji = document.querySelector(".inputFlag")
 const ascending = document.querySelector(".asceBtn")
 const descending = document.querySelector(".descBtn")
 const error = document.querySelector(".errorMsg")
-const countryFlags = [];
+let countryFlags = [];
 
 if (localStorage["country"]) {
     countryFlags = JSON.parse(localStorage.getItem("country"));
 }
 
-function createList(list) {
+const createList = (list) => {
     const node = document.createElement("li");
     const textnode = document.createTextNode(list);
 
@@ -25,16 +25,15 @@ function createList(list) {
     const country = document.querySelector(".country").appendChild(node);
 
 }
-function createFlags(lists) {
+const createFlags = (lists) => {
     const node2 = document.createElement("li");
     const textnode2 = document.createTextNode(lists);
 
     node2.appendChild(textnode2);
     const flag = document.querySelector(".flag").appendChild(node2);
 }
-
-function displayCountry() {
-    var regex = /[\uD83C][\uDDE6-\uDDFF][\uD83C][\uDDE6-\uDDFF]/;
+const displayCountry = () => {
+    let regex = /[\uD83C][\uDDE6-\uDDFF][\uD83C][\uDDE6-\uDDFF]/;
 
     const countryInput = input.value
     const flagInput = emoji.value
@@ -71,8 +70,8 @@ function displayCountry() {
 }
 
 
-function showCountry(countries) {
-    var countryLIst = []
+const showCountry = (countries) => {
+     var countryLIst = []
     for (let i = 0; i < countries.length; i++) {
         const element1 = countries[i];
         const element2 = flags[i];
