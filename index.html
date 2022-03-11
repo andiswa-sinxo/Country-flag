@@ -12,15 +12,16 @@
         <h1>Country Flags 🗺️</h1>
 
         <p>Countries with Flags</p>
-
+        <a href="https://emojipedia.org/flags/" target="_blank">Flags Emoji 🇯🇵 🇰🇷 🇩🇪 🇨🇳 🇺🇸 🇫🇷 🇪🇸 🇮🇹 🇷🇺 🇬🇧 </a> 
         <div class="errorMsg"></div>
+        <div class="storageMsg"></div>
         <label for="Country">Country:</label>
         <input type="text" value="" class="inputCountry">
         <label for="flag">Flag:</label>
         <input type="text" value="" class="inputFlag">
         
         <button type="submit" class="btn">add</button>
-
+       
         <div>
             <label for="">Sort by:</label>
             <button type="submit" class="asceBtn">Ascending</button>
@@ -32,7 +33,14 @@
         <ul class="country"></ul>
 
         <ul class="flag"></ul>
+        <div>
+            <button type="reset" class="reset">clear</button>
+    
+        </div>
     </div>
+    
+
 </body>
+<script src="./country-factory-function.js"></script>
 <script src="./index.js"></script>
 </html> 
