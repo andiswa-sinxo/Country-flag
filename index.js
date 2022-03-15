@@ -60,12 +60,12 @@ const createFlags = (lists) => {
     }
 
 
-    const resetBtn = () => {
-        btn.innerHTML = insta.refresh()
-        setTimeout(() => {
-            storage.innerHTML = "Storage cleared successfully"
-        }, 1000);
-    }
+    // const resetBtn = () => {
+    //     btn.innerHTML = insta.refresh()
+    //     setTimeout(() => {
+    //         storage.innerHTML = "Storage cleared successfully"
+    //     }, 1000);
+    // }
 
     const displayCountry = () => {
         let regex = /[\uD83C][\uDDE6-\uDDFF][\uD83C][\uDDE6-\uDDFF]/;
@@ -107,7 +107,7 @@ const createFlags = (lists) => {
 
 button.addEventListener('click', displayCountry)
 
-btn.addEventListener('click', resetBtn)
+// btn.addEventListener('click', resetBtn)
 
 ascending.addEventListener('click', () => {
     country.innerHTML = '';

@@ -24,11 +24,11 @@ const worldCountry = () => {
         }
 
     }
-    const refresh = () => {
-        setTimeout(() => {
-            localStorage.clear()
-        },2000);
-    }
+    // const refresh = () => {
+    //     setTimeout(() => {
+    //         localStorage.clear()
+    //     },2000);
+    // }
 
     const addCountry = (countryName, flag) => {
         let a = countryName
@@ -54,7 +54,7 @@ const worldCountry = () => {
          emptyCountry,
          emptyFlag,
          emptyCountryFlag,
-         refresh,
+        //  refresh,
          addCountry
         //  sortingCountries,
         //  dscendCountries
